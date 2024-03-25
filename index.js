@@ -14,7 +14,6 @@ const shuffle = (list) => {
     }
     return templist
 }
-// Step 1:
 const urls = [
     "https://i.ibb.co/sjvVrG3/fruit-plyh.jpg",
     "https://i.ibb.co/g3tqj4w/fruit-zxcv.jpg",
@@ -27,18 +26,16 @@ const urls = [
     "https://i.ibb.co/ccNyKX0/fruit-uzxc.jpg"
 ];
 
-
 const randomUrls = shuffle(urls);
 
-// Step 2:
 const images = document.querySelectorAll('.card img');
 
-// Step 3:
+
 images.forEach((image, index) => {
     image.src = randomUrls[index];
 });
 
-// Step 4:
+
 const h1 = document.querySelector('h1');
 h1.textContent += '!';
 /*
